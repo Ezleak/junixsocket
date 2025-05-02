@@ -300,17 +300,17 @@ In contrast to other implementations, junixsocket extends the Java Sockets API (
         </profile>
 
         <profile>
-            <id>arch-aarch64-Linux</id>
+            <id>arch-aarch64-Android</id>
             <activation>
                 <os>
                     <arch>aarch64</arch>
-                    <name>Linux</name>
+                    <name>Android</name>
                 </os>
             </activation>
             <properties>
                 <!-- Specify "junixsocket.native.aol" to override the architecture
           AOL for this environment; see nar-maven-plugin for details -->
-                <junixsocket.native.aol>aarch64-Linux-clang</junixsocket.native.aol>
+                <junixsocket.native.aol>aarch64-Android-clang</junixsocket.native.aol>
                 <junixsocket.native.llvm.target>current</junixsocket.native.llvm.target>
                 <junixsocket.native.jnilib.extension>so</junixsocket.native.jnilib.extension>
                 <junixsocket.native.default.toolPath>${junixsocket.native.crossclang.toolPath}</junixsocket.native.default.toolPath>
